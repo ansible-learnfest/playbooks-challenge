@@ -5,7 +5,8 @@
   tasks:
   - name: Set SELinux to enforcing
     ansible.builtin.include_role:
-      name: redhat.rhel_system_roles.selinux
+      #name: redhat.rhel_system_roles.selinux
+      name: fedora.linux_system_roles.selinux
     vars:
       selinux_state: enforcing
       
